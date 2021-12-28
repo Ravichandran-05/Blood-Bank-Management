@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blood Bank</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <br />
+    <br />
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+
+            <div class="col-md-6 main">
+                <form action="/search" method="post">
+                    <fieldset>
+                        <legend style="text-align: center; font-weight: bold">
+                            Search for request
+                        </legend>
+                        <label for="searchbg">Enter Blood Group:</label>
+                        <input type="text" id="searchbg" name="searchbg" /><br /><br />
+
+                        <br />
+                        <input type="submit" value="search" onclick="fun()" />
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+
+            <div class="col-md-6 main">
+                <form action="/allrequest" method="post">
+                    <fieldset>
+                        <legend style="text-align: center; font-weight: bold">
+                            Show all requests ?
+                        </legend>
+
+                        <input type="submit" value="Show All" onclick="fun()" />
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</body>
+
+</html>

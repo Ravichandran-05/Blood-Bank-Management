@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+        <%= pageTitle %>
+    </title>
+    <link rel="stylesheet" href="/css/blood.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <% if (prods.length > 0) { %>
+            <div class="grid">
+                <% for (let donor of prods) { %>
+                    <article class="card C">
+                        <header class="card__header">
+                            <h1 class="product__title">
+                                <br />
+                                <%= donor.blood_group %>
+                            </h1>
+                        </header>
+
+                        <div class="card__content">
+                            <p class="product__description">
+                                <%= donor.name %>
+                            </p>
+                            <p class="product__description">
+                                <%= donor.age %>
+                            </p>
+                            <p class="product__description">
+                                <%= donor.gender %>
+                            </p>
+                            <p class="product__description">
+                                <%= donor.phone %>
+                            </p>
+                            <p class="product__description">
+                                <%= donor.place %>
+                            </p>
+                            <p class="product__description">
+                                <%= donor.date %>
+                            </p>
+                            <p class="product__description">
+                                <%= donor.time %>
+                            </p>
+                            <br />
+                            <br />
+                            <p class="product__description btn1">
+                                <a href="http://localhost:3000/life.html" class="btn">Accept</a>
+                            </p>
+                            <br />
+                        </div>
+                    </article>
+                    <% } %>
+            </div>
+
+            <% } else { %>
+                <h1>The required blood group is not available...</h1>
+                <% } %>
+    </main>
+</body>
+
+</html>

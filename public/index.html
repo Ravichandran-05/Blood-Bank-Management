@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blood Bank</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <br />
+    <br />
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+
+            <div class="col-md-6 main">
+                <form action="/sign_up" method="post">
+                    <fieldset>
+                        <legend style="text-align: center; font-weight: bold">
+                            Request Blood
+                        </legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required /><br /><br />
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" required /><br /><br />
+                        <label for="gender">Gender:</label>
+                        <select name="gender" id="gender" name="gender" required>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Transgender</option>
+              </select>
+                        <br />
+                        <br />
+                        <label for="Phone">Phone Number:</label>
+                        <input type="tel" id="Phone" name="phone" required /><br /><br />
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" name="email" /><br /><br />
+                        <label for="Bgroup">Select The Blood Group Needed:</label>
+                        <select id="bgrp" name="bg" required>
+                <option>A+</option>
+                <option>A-</option>
+                <option>A1+</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>B1+</option>
+                <option>AB+</option>
+                <option>AB-</option>
+                <option>O+</option>
+                <option>O-</option></select
+              ><br /><br />
+              <label for="unit">Blood Unit:</label>
+              <input type="number" id="unit" name="unit" required /><br /><br />
+              <label for="place">Enter The City along with Pincode:</label>
+              <input type="text" id="place" name="place" required /><br /><br />
+              <label for="date"
+                >Select The Date and Time,When Blood is Needed</label
+              ><br /><br />
+              <input type="date" id="date" name="date" required />
+              <input type="time" id="time" name="time" /><br /><br />
+
+              <br /><br />
+              <input type="submit" value="Request" onclick="fun()" />
+            </fieldset>
+          </form>
+        </div>
+
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+  </body>
+</html>
